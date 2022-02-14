@@ -1,0 +1,40 @@
+template>
+  <div id="text">
+    <p>Click  for my age on my next birthday!</p>
+    <button v-on:click="increment">Increment</button>
+    <p>Double-Click to lower my age by one!</p>
+    <button v-on:dblclick="decrement">Decrement</button>
+  </div>
+</template>
+
+<script>
+export default {
+  data(){
+    return{
+      Name: "Te-Andre Brown",
+      age:20,
+    }
+  },
+  methods:{
+    increment(){
+      this.age++
+    },
+    decrement(){
+      this.age--
+    }
+
+  }
+
+}
+</script>
+
+<style>
+  button{
+    color: burlywood;
+    font-family: "Times New Roman";
+  }
+  #text{
+    font-family: "Times New Roman";
+    display: inline-block;
+  }
+</style>
